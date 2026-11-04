@@ -2,7 +2,7 @@
 
 **VOID — wearable art.** A local postmodernist storefront built around the learner's chosen layered frame and contrasting typography. Size selection and the temporary demo bag work; there is no checkout.
 
-**Status:** implementation and live guide under review on `feature/BRAND-001`. The learner approved the brief and logo and supplied brief browser observations. Learning-record accuracy review is complete; GitHub issue #1 is open; PR and final keep/merge remain pending. Nothing has been merged, published or submitted by the agent. See [SPEC.md](SPEC.md) for the acceptance audit and [LEARNING.md](LEARNING.md) for the short, learner-reviewed evidence summary.
+**Status:** implementation and live guide under review on `feature/BRAND-001`. The learner approved the brief and logo and supplied brief browser observations. Learning-record accuracy review is complete; GitHub issue #1 is open; [PR #2](https://github.com/itssfariha-lab/is117-brand-studio/pull/2) is open; final keep/merge remains pending. Nothing has been merged, published or submitted by the agent. See [SPEC.md](SPEC.md) for the acceptance audit and [LEARNING.md](LEARNING.md) for the short, learner-reviewed evidence summary.
 
 Open the [storefront](http://127.0.0.1:5173/), [live style guide](http://127.0.0.1:5173/styleguide.html) or [paired studies](http://127.0.0.1:5173/explorations/) with the local server running. No verified deployment URL is available. Your repository is [itssfariha-lab/is117-brand-studio](https://github.com/itssfariha-lab/is117-brand-studio).
 

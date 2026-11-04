@@ -20,6 +20,6 @@ AI-drafted task evidence, not a transcript or grade. May be public: review, corr
 
 - **Work performed by AI:** Research, two controlled previews, copy/layout, original SVG, shared live guide, audience/brief proposals, ethical sections, tests, render inspection and documentation. Learner supplied VOID, the promise, broad audience, preferred direction, choice/reason, later approvals and the contributions above.
 - **SPEC / actual checks / artifacts:** [SPEC](SPEC.md), [preview evidence](docs/explorations/README.md), [validation](docs/validation/VOID.md), [storefront](public/index.html), [guide](public/styleguide.html), [logo](public/assets/void-logo.svg).
-- **Issue / PR:** [Issue #1](https://github.com/itssfariha-lab/is117-brand-studio/issues/1) created after local implementation once browser sign-in was available. Commit/push/PR in progress; no merge, verified deployment or submission.
+- **Issue / PR:** [Issue #1](https://github.com/itssfariha-lab/is117-brand-studio/issues/1) created after local implementation once browser sign-in was available. Committed and pushed on feature/BRAND-001; [PR #2](https://github.com/itssfariha-lab/is117-brand-studio/pull/2) open. No merge, verified deployment or submission.
 
-**Next step:** Commit/push and review a PR linked to issue #1; keep/merge and submission remain separate decisions/actions.
+**Next step:** Review [PR #2](https://github.com/itssfariha-lab/is117-brand-studio/pull/2) and its checks; keep/merge and submission remain separate decisions/actions.

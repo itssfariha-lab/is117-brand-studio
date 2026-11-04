@@ -1,8 +1,8 @@
 # BRAND-001: express VOID through a postmodernist storefront
 
-PR draft for [BRAND-001 issue #1](https://github.com/itssfariha-lab/is117-brand-studio/issues/1).
+Source draft for [PR #2](https://github.com/itssfariha-lab/is117-brand-studio/pull/2), related to [BRAND-001 issue #1](https://github.com/itssfariha-lab/is117-brand-studio/issues/1).
 
-Closes #1.
+Related to #1; keep/merge pending.
 
 The neutral storefront becomes VOID, using the learner-selected layered product frame and contrasting type to express an artistic, unconventional identity. An original one-color SVG proposal and the live guide share actual storefront assets, type, colors, spacing and action styles. The original white-shirt image and shop behavior remain intact; checkout is outside scope.
 
