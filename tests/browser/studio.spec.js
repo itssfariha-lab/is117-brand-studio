@@ -57,7 +57,12 @@ test("keyboard: the skip link reaches main and the size controls work without a 
   await expect(page.locator("#bag-count")).toHaveText("1");
 });
 
-for (const route of ["/", "/styleguide.html", "/studio.html"]) {
+for (const route of [
+  "/",
+  "/styleguide.html",
+  "/studio.html",
+  "/persuasion-preview.html",
+]) {
   test(`page integrity and automated accessibility: ${route}`, async ({
     page,
   }) => {

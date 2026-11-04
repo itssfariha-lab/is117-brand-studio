@@ -5,54 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="An unfinished, neutral T-shirt storefront for the IS117 Brand Studio. Build a brand through deliberate, visible design choices."
+      content="VOID transforms an ordinary white T-shirt into a canvas for personal expression."
     />
-    <title>Your Brand — neutral storefront starter</title>
+    <title>VOID — wearable art</title>
     <link rel="icon" href="data:," />
     <link rel="stylesheet" href="styles.css" />
     <script src="shop.js" defer></script>
   </head>
-  <body>
+  <body class="void-brand">
     <a class="skip-link" href="#main">Skip to content</a>
-    <aside class="starter-notice" aria-label="Starter information">
-      <span
-        ><strong>Unfinished by design.</strong> This is a neutral teaching
-        starter. Replace its identity after your brand decisions.</span
-      >
-      <a href="studio.html"
-        >Enter the studio <span aria-hidden="true">↗</span></a
-      >
-    </aside>
-    <header class="site-header wrap">
-      <a
-        class="brand-link"
-        href="index.html"
-        aria-label="Your Brand storefront home"
+    <header class="masthead">
+      <a class="brand" href="index.html" aria-label="VOID storefront home"
         ><img
-          class="wordmark"
-          src="assets/wordmark.svg"
-          alt="Neutral starter wordmark"
-          width="175"
-          height="26"
+          class="brand-image"
+          src="assets/void-logo.svg"
+          alt="VOID"
+          width="130"
+          height="40"
       /></a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a class="nav-link" href="index.html" aria-current="page">Shop</a>
-        <a class="nav-link" href="styleguide.html">Style guide</a>
-        <a class="nav-link" href="studio.html"
-          >Studio <span aria-hidden="true">↗</span></a
-        >
+      <nav aria-label="Main navigation">
+        <a href="index.html">Shop</a><a href="styleguide.html">Style guide</a
+        ><a href="explorations/">Design studies</a
+        ><a href="studio.html">Studio</a>
       </nav>
-      <a class="bag-link" href="#demo-bag" aria-label="View demo bag"
-        >Demo bag <span id="bag-count" class="bag-count">0</span></a
-      >
+      <a href="#demo-bag">Demo bag (<span id="bag-count">0</span>)</a>
     </header>
-
     <main id="main">
-      <section class="product-section wrap" aria-labelledby="product-title">
-        <div class="product-visual">
-          <div class="visual-label">
-            <span>001 / The starting point</span><span>Unbranded</span>
-          </div>
+      <section class="hero" aria-labelledby="product-title">
+        <div class="artwork">
+          <span class="art-index">001 / White T-shirt</span
+          ><span class="backtype" aria-hidden="true">VOID</span>
+          <div class="geometry" aria-hidden="true"></div>
           <img
             class="shirt-image"
             src="assets/white-shirt.svg"
@@ -60,28 +43,19 @@
             width="800"
             height="880"
             fetchpriority="high"
-          />
-          <div class="image-caption">
-            <span>One product. Room for your point of view.</span
-            ><span aria-hidden="true">↙</span>
-          </div>
+          /><span class="art-caption">The ordinary, reimagined.</span
+          ><span class="art-cross" aria-hidden="true">✳</span>
         </div>
-        <div class="product-information">
-          <p class="eyebrow">
-            <span class="status-dot" aria-hidden="true"></span> Neutral product
-            / demo only
+        <div class="hero-copy">
+          <p class="eyebrow">Alternative streetwear / wearable art</p>
+          <h1 id="product-title">Your body.<br /><em>Your canvas.</em></h1>
+          <p class="support">
+            VOID transforms an ordinary white T-shirt into a canvas for personal
+            expression.
           </p>
-          <h1 id="product-title">The white<br />T-shirt.</h1>
-          <p class="product-intro">A plain shirt. A place to begin.</p>
-          <p class="muted product-description">
-            This starter has a working product page and room for a brand. Its
-            audience, personality, message, and visual direction are still yours
-            to decide.
+          <p class="product-note">
+            White T-shirt / plain, unbranded illustration
           </p>
-          <div class="price-row">
-            <p class="price">$28 <span>USD</span></p>
-            <span class="micro-label">Fictional demo price</span>
-          </div>
           <form id="product-form" class="product-form" novalidate>
             <fieldset aria-describedby="size-help size-error">
               <legend>Choose a size</legend>
@@ -118,27 +92,13 @@
               Add to demo bag <span aria-hidden="true">↗</span>
             </button>
           </form>
+
           <p class="demo-disclaimer">
-            A classroom interaction, using fictional product data. No order,
-            payment, or personal information is collected.
+            Classroom demo. No orders, payment, or personal information
+            collected. The bag resets on reload.
           </p>
-          <dl class="product-facts">
-            <div>
-              <dt>Color</dt>
-              <dd>White</dd>
-            </div>
-            <div>
-              <dt>Brand identity</dt>
-              <dd>Not decided yet</dd>
-            </div>
-            <div>
-              <dt>Product claims</dt>
-              <dd>None supplied</dd>
-            </div>
-          </dl>
         </div>
       </section>
-
       <section
         id="demo-bag"
         class="bag-section wrap"
@@ -167,31 +127,64 @@
           </p>
         </div>
       </section>
-
-      <section class="starter-next wrap" aria-labelledby="next-title">
-        <p class="eyebrow">For the person building this site</p>
-        <h2 id="next-title">The shirt stays.<br />The story is your work.</h2>
+      <section class="expression-section" aria-labelledby="expression-title">
+        <div>
+          <p class="eyebrow">A point of view</p>
+          <h2 id="expression-title">
+            For people who<br /><em>dress to express.</em>
+          </h2>
+        </div>
         <div>
           <p>
-            Choose who this is for, decide what the brand should express, and
-            make those choices visible. Keep the storefront and its
-            <a href="styleguide.html">live style guide</a> in sync.
+            Creative expression has more than one shape. Start with a blank
+            canvas and bring your own point of view.
           </p>
-          <a class="button button-secondary" href="studio.html"
-            >See the studio brief <span aria-hidden="true">↗</span></a
-          >
+          <p>
+            Explore a look that feels like you. No membership, labels or rules
+            required.
+          </p>
         </div>
       </section>
+      <section class="styling-section" aria-labelledby="styling-title">
+        <p class="eyebrow">An open sketchbook / free styling ideas</p>
+        <h2 id="styling-title">Style it <em>your way.</em></h2>
+        <div class="tip-grid">
+          <article>
+            <span class="eyebrow">01 / Contrast</span>
+            <h3>Let one thing speak.</h3>
+            <p>
+              Pair a white tee with a dark layer. Choose one accessory as your
+              focal point.
+            </p>
+          </article>
+          <article>
+            <span class="eyebrow">02 / Proportion</span>
+            <h3>Change the outline.</h3>
+            <p>
+              Try the tee beside a long jacket or wide trousers. Notice how the
+              overall silhouette changes.
+            </p>
+          </article>
+          <article>
+            <span class="eyebrow">03 / Personal mark</span>
+            <h3>Bring your own reference.</h3>
+            <p>
+              Build a look around a color, artwork or object that matters to
+              you.
+            </p>
+          </article>
+        </div>
+        <p class="fine-print">
+          Optional outfit ideas, not product-fit advice. No signup or purchase
+          required.
+        </p>
+      </section>
     </main>
-
-    <footer class="site-footer wrap">
-      <p>
-        IS117 Brand Studio <span class="footer-separator"> / </span> Neutral
-        starter
-      </p>
-      <p class="footer-tagline">Fictional product. Real design decisions.</p>
-      <a href="https://github.com/kaw393939/is117-brand-studio#readme"
-        >Project README <span aria-hidden="true">↗</span></a
+    <footer>
+      <span>VOID / wearable art</span
+      ><span>Classroom concept. No checkout.</span
+      ><a href="https://github.com/itssfariha-lab/is117-brand-studio"
+        >Project repository ↗</a
       >
     </footer>
   </body>
