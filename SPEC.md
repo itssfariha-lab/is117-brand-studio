@@ -1,91 +1,100 @@
 # Brand Studio decisions
 
-This is the durable agreement between the learner and agent. Keep it concise and update it only with agreed choices or actual evidence. `Not chosen yet` is a valid status. Persona cards are hypotheses unless supported by real research.
-
-[LEARNING.md](LEARNING.md) holds the short, reviewable record of learner explanations and help received. Keep the brand decisions and implementation evidence here; link rather than duplicate them.
+Durable decisions and actual evidence for BRAND-001. Audience cards are unvalidated hypotheses. [LEARNING.md](LEARNING.md) distinguishes learner contributions from AI assistance.
 
 ## Current stage
 
-- Stage: Baseline ready to try; brand decisions pending.
-- Current feature: `BRAND-001` — first branded storefront and live style guide.
-- Status: Pending learner scope agreement.
-- Next small decision: Confirm the first slice after trying the neutral storefront.
+- Feature: **BRAND-001 — first branded storefront and live style guide**.
+- Stage: chosen postmodernist storefront implemented locally; brief and logo approved; learning summary reviewed for accuracy; keep/merge pending. Not kept or submitted.
+- Scope authorized: final storefront, SVG logo, live guide, two audience hypotheses, brief, ethical persuasion and documentation; preserve size selection and temporary demo bag.
+- Branch: `feature/BRAND-001` in `git@github.com:itssfariha-lab/is117-brand-studio.git`.
+- Issue: [BRAND-001 #1](https://github.com/itssfariha-lab/is117-brand-studio/issues/1), created after local implementation when GitHub sign-in became available. This timing gap is preserved; the issue did not exist during earlier work. Learning-summary accuracy reviewed; keep/merge remains pending.
 
 ## Product boundary
 
-The product is the same white T-shirt throughout the comparison. The baseline offers a size selector and temporary demo bag. No real orders, payment, accounts, or persistence. Keep product facts stable between directions; do not add unsupported claims about materials, manufacturing, sustainability, fit, delivery, scarcity, reviews, or sales.
+Same original plain white T-shirt illustration throughout. No checkout, payment, accounts, persistence or personal data collection. No invented materials, fit, shipping, scarcity, testimonials, sustainability or sales claims. “Wearable art” expresses the brand concept; the illustration does not depict a supplied print or customization service. No price is asserted on the branded page.
 
 ## Audience hypotheses
 
-The primary need guides the page. Give the secondary card one contrasting need to check that same page; keep both cards brief.
+Learner-defined audience: creative people who enjoy alternative streetwear and expressing individuality. The following concrete situations and concerns are **AI-proposed hypotheses approved by the learner** (“looks good as is”), not interviews or validated research.
 
-| Tiny card                             | Primary audience          | Secondary audience        |
-| ------------------------------------- | ------------------------- | ------------------------- |
-| Person in a concrete situation        | Not chosen yet            | Not chosen yet            |
-| Goal or meaning they seek             | Not chosen yet            | Not chosen yet            |
-| Concern before choosing               | Not chosen yet            | Not chosen yet            |
-| What the page should help them decide | Not chosen yet            | Not chosen yet            |
-| Evidence or assumption                | Assumption; not validated | Assumption; not validated |
+| Tiny card               | Primary hypothesis                                                       | Secondary hypothesis                                                          |
+| ----------------------- | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------- |
+| Concrete situation      | A creative person building an outfit for an art gathering                | Someone curious about alternative streetwear, trying it in an everyday outfit |
+| Goal / meaning          | Express an individual artistic point of view                             | Try self-expression without feeling they must fit a subculture                |
+| Concern                 | The page may feel generic rather than expressive                         | Experimental visuals may make the product or next step hard to understand     |
+| Page should help decide | Does this visual identity fit how I want to express myself?              | Can I understand the shirt and explore the demo comfortably?                  |
+| Evidence                | Derived from the learner's broad audience; situation/concern unvalidated | AI-proposed contrasting need; unvalidated                                     |
+
+Primary hypothesis leads the expressive composition; the secondary checks readable copy and predictable controls. Learner approved the proposed audience/brief package (“looks good as is”); no additional audience rationale was supplied.
 
 ## Early brand brief
 
-| Decision                                 | Agreement      |
-| ---------------------------------------- | -------------- |
-| Brand name                               | Not chosen yet |
-| One-sentence promise                     | Not chosen yet |
-| Primary archetype: the brand's character | Not chosen yet |
-| Three voice traits                       | Not chosen yet |
-| One example line in this voice           | Not chosen yet |
-| Learner's predicted audience effect      | Not chosen yet |
+| Decision           | Agreement / provenance                                                                                                                                                                                               |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name               | **VOID** — learner supplied                                                                                                                                                                                          |
+| Promise            | **VOID transforms an ordinary white T-shirt into a canvas for personal expression.** — learner supplied                                                                                                              |
+| Direction          | Dark, mysterious, bold, artistic, unconventional, experimental — learner supplied                                                                                                                                    |
+| Primary archetype  | **Creator — AI proposal approved by the learner.** Recurring brand character invites making and expression, not a customer classification.                                                                           |
+| Three voice traits | **Bold, artistic, experimental — AI proposal drawn from supplied direction and approved by the learner.**                                                                                                            |
+| Example line       | “Your body. Your canvas.” — AI-written headline, used in both previews and the implemented direction                                                                                                                 |
+| Predicted effect   | Learner expects layered framing and contrasting typography to create an artistic, unconventional look appealing to people using streetwear for self-expression. This is an intended effect, not customer validation. |
 
 ## Visual decision
 
-Compare two small hero previews before building the whole page. Hold the product, headline, supporting copy, and action identical. Use specific real design references and annotate visual choices, intended effect, and risk.
-
-A simple original SVG wordmark is enough. Show small-size and one-color presentations; they may use the same asset when it works.
-
-| Item                                              | Agreement or evidence |
-| ------------------------------------------------- | --------------------- |
-| Shared headline / support / action                | Not chosen yet        |
-| Modernist preview, reference, and annotations     | Not chosen yet        |
-| Postmodernist preview, reference, and annotations | Not chosen yet        |
-| Chosen direction and reason                       | Not chosen yet        |
-| Original SVG logo                                 | Not chosen yet        |
-| Monochrome and small-size variants                | Not chosen yet        |
-| Logo review at actual use size                    | Not checked yet       |
-| Shared palette, typography, spacing, and assets   | Not chosen yet        |
+| Item                  | Agreement / evidence                                                                                                                                                                                                     |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Controlled comparison | Same white-shirt SVG, “Your body. Your canvas.” headline, supplied promise and “Add to demo bag” action                                                                                                                  |
+| Modernist             | [Live HTML](public/explorations/modernist.html): structured grid, geometric hierarchy and sans-serif organization                                                                                                        |
+| Postmodernist         | [Live HTML](public/explorations/postmodernist.html): offset frame, mixed typography, overlapping scales and print texture                                                                                                |
+| References            | [Annotated research and matching screenshots](docs/explorations/README.md); primary MoMA and designer sources, actual images inspected                                                                                   |
+| Learner selection     | **Postmodernist.** Learner explicitly chose it because layered framing and contrasting typography create an artistic, unconventional look suited to streetwear self-expression.                                          |
+| Implementation        | [Storefront](public/index.html), [shared identity CSS](public/styles.css), [live style guide](public/styleguide.html)                                                                                                    |
+| Original SVG          | [VOID logo proposal](public/assets/void-logo.svg), AI-drawn geometric paths and interrupted O; no font dependency, no trademark-clearance claim                                                                          |
+| Logo variants         | Same flat-color transparent asset at navigation size (130px), large (260px) and small one-color (110px) in the guide; no grayscale filter                                                                                |
+| Logo approval         | AI inspected actual desktop and narrow renders for readability, silhouette and contrast; learner approved keeping it (“good”) and identified “lettering” as the visible detail they liked; no further rationale supplied |
+| Shared identity       | Night background, chalk text/action, lavender expression/selection; Arial/Helvetica sans-serif plus Georgia italic; shared spacing tokens and actual button classes                                                      |
 
 ## Ethical persuasion
 
-Choose two applications that help the visitor make a voluntary, informed decision. Record their real implementation and mechanism rather than a principle name alone. Required size selection or validation alone does not establish consistency. Do not invent social proof, scarcity, authority, or product facts.
+Two applications implemented after the learner explained the free styling tips on 2026-11-04. Learner benefit: visitors can explore ways to wear the shirt and express personal style without buying; this supports a creative, helpful experience. AI proposed the elements before that explanation. These are not measured conversion improvements.
 
-| Principle      | Actual copy or interaction | Visitor benefit / factual support |
-| -------------- | -------------------------- | --------------------------------- |
-| Not chosen yet | Not chosen yet             | Not chosen yet                    |
-| Not chosen yet | Not chosen yet             | Not chosen yet                    |
+| Principle   | Actual interface / mechanism                                                                                                        | Visitor benefit / limits                                                                                                                                                                |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Reciprocity | Freely visible “Style it your way” section: contrast, proportion and personal-reference outfit tips; no signup or purchase required | Gives useful ideas before asking for anything. Optional outfit composition, not unsupported fit/product advice. AI-proposed copy; learner explained the styling benefit.                |
+| Unity       | “For people who dress to express” and an invitation to bring one's own point of view                                                | Invites identification around the learner's stated creative value. Does not assert real membership, customers or testimonials. AI-proposed copy; learner explained the styling benefit. |
 
-## BRAND-001 — first branded storefront and live style guide
+Implementation status: both sections appear on the [storefront](public/index.html), with a [design reference page](public/persuasion-preview.html). The learner explained reciprocity; no separate learner explanation of unity is claimed. Required size selection is not claimed as consistency. No pressure, hidden charges or enrollment.
 
-**Scope:** turn the working neutral storefront into the chosen brand's first coherent page. Keep the existing size selector and demo bag usable. Do not add checkout or all future features.
+## BRAND-001 acceptance audit
 
-Keep when:
-
-- The learner has chosen the audience hypotheses, brief, visual direction, and logo; the page visibly expresses those choices.
-- Two annotated hero directions compare modernist/postmodernist thinking with the same content and real source links.
-- The selected SVG logo works at small size and in one color; the presentations may share one asset.
-- The storefront and live style guide share CSS variables, typography, components, and assets; they do not drift into separate identities.
-- Two ethical persuasion applications are visible and their claims are supportable.
-- Prepared checks pass, the agent has reviewed the slice and discussed one actual check, and the learner has reported a browser impression plus keyboard/mobile observations.
-- The issue, branch, commit, and PR explain this feature in the learner's repository; agreed decisions and actual evidence are saved here. The learner has approved keeping and merging the change, and the merge into `main` is verified. Publishing is a separate choice.
+| Requirement                                      | Current evidence / remaining work                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Two controlled, researched hero previews         | Implemented with annotations and desktop/mobile captures                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Selected direction and audience reason           | Learner explicitly supplied both                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Two audience hypotheses and brief                | AI-drafted hypotheses, Creator archetype and voice traits approved by the learner (“looks good as is”); hypotheses remain unvalidated                                                                                                                                                                                                                                                                                                                    |
+| Original SVG and small / one-color presentations | Implemented; learner approved keeping it and identified the lettering                                                                                                                                                                                                                                                                                                                                                                                    |
+| Coherent storefront and live guide               | Shared actual tokens, type, image, logo and primary-action classes; automated and visual checks below                                                                                                                                                                                                                                                                                                                                                    |
+| Two ethical applications                         | Both applied; learner explained the styling-tip benefit after AI proposal                                                                                                                                                                                                                                                                                                                                                                                |
+| Existing size / bag functionality                | Existing shop script retained; valid/missing-size, keyboard, clear and reload checks pass                                                                                                                                                                                                                                                                                                                                                                |
+| Automated checks and AI render review            | `npm run check`: formatting/lint and 7 server tests passed; 21 Chromium browser tests passed. Actual final renders inspected at 1440px and 375px. Automated axe is not full accessibility proof.                                                                                                                                                                                                                                                         |
+| Learner check interpretation                     | Learner explained that the missing-size test catches adding a shirt without a size and prevents size confusion; supplied after seeing the actual passing check.                                                                                                                                                                                                                                                                                          |
+| Learner first impression, keyboard and mobile    | First impression: learner likes the colors (“looks great,” then “colcors” after a follow-up). Keyboard: learner reported the bag number “goes up” after instructions and a count-location hint; complete focus sequence not described. Narrow view: learner said “it compresses,” then identified the shirt moving above the text after a two-option follow-up. Readability/full mobile usability not reported; no audience-effect explanation inferred. |
+| Learning-record review                           | Learner replied “good” to the displayed summary on 2026-11-04; accuracy reviewed, not a keep/merge approval                                                                                                                                                                                                                                                                                                                                              |
+| GitHub issue / commit / PR                       | [Issue #1](https://github.com/itssfariha-lab/is117-brand-studio/issues/1) created; committed and pushed; [PR #2](https://github.com/itssfariha-lab/is117-brand-studio/pull/2) open, GitHub checks pending                                                                                                                                                                                                                                                |
+| Keep / merge                                     | Learner decision and verified merge pending                                                                                                                                                                                                                                                                                                                                                                                                              |
+| README / deployment / submission                 | README states actual local status; deployment not requested or verified; submission not performed                                                                                                                                                                                                                                                                                                                                                        |
 
 ## Evidence
 
-Write a short result and link only evidence that exists. A passing browser check is evidence for its assertions, not customer research or proof of full accessibility.
+| Spec ID   | Files / checks                                                                                                                                                                                           | Issue / PR                                                                                                                                       | Result                                                                                                                                                                                   |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BRAND-001 | [Preview notes](docs/explorations/README.md), [browser cases](tests/browser/explorations.spec.js), [storefront](public/index.html), [guide](public/styleguide.html), [logo](public/assets/void-logo.svg) | [Issue #1](https://github.com/itssfariha-lab/is117-brand-studio/issues/1) / [PR #2](https://github.com/itssfariha-lab/is117-brand-studio/pull/2) | Final checks: formatting/lint, 7 server tests and 21 browser tests pass. Added identity consistency and proposal-page integrity checks. See [final validation](docs/validation/VOID.md). |
 
-| Spec ID   | Files           | Issue / PR      | Actual checks and observations            |
-| --------- | --------------- | --------------- | ----------------------------------------- |
-| BRAND-001 | Not changed yet | Not created yet | Not run yet; learner observations pending |
+## Next personal steps
+
+Review the recorded first-impression/keyboard/narrow-view observations. LEARNING.md accuracy review is complete; review any later changed excerpts before publication. Issue #1 and [PR #2](https://github.com/itssfariha-lab/is117-brand-studio/pull/2) now exist; review the PR and remote checks; decide whether to keep and merge. Verify the merge before calling BRAND-001 kept. Publish only if chosen and verify the real URL. Follow the course's submission instructions; no submission destination or completion is evidenced here.
 
 ## Later
 
-No follow-up is selected. After keeping `BRAND-001`, choose one next cycle: perhaps a brand story, a supported fit guide, or richer demo-bag behavior. Agree its scope and add one new spec ID at that time.
+No follow-up feature selected. No extra backlog implemented.

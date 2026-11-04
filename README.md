@@ -1,10 +1,12 @@
 # IS117 Brand Studio
 
-**The same white T-shirt can carry very different meanings.** Develop a brand for it with an AI collaborator, then make those decisions visible in a professional website and a live style guide.
+**VOID — wearable art.** A local postmodernist storefront built around the learner's chosen layered frame and contrasting typography. Size selection and the temporary demo bag work; there is no checkout.
 
-This template starts with a working, deliberately neutral storefront. Your audience, name, promise, logo, voice, and visual direction are **not chosen yet**. You make the decisions; the agent helps you explore, build, check, and revise them.
+**Status:** implementation and live guide under review on `feature/BRAND-001`. The learner approved the brief and logo and supplied brief browser observations. Learning-record accuracy review is complete; GitHub issue #1 is open; [PR #2](https://github.com/itssfariha-lab/is117-brand-studio/pull/2) is open; final keep/merge remains pending. Nothing has been merged, published or submitted by the agent. See [SPEC.md](SPEC.md) for the acceptance audit and [LEARNING.md](LEARNING.md) for the short, learner-reviewed evidence summary.
 
-**A short record, visible to you:** your AI coach updates [LEARNING.md](LEARNING.md) with brief task-related explanations, observations and help received. It is AI-drafted, not a full transcript, and may be public with your repository. Review it and correct or remove excerpts before they are committed or pushed. Your instructor uses it alongside the project with this [simple three-part rubric](docs/assessment.md); the AI does not assign your grade.
+Open the [storefront](http://127.0.0.1:5173/), [live style guide](http://127.0.0.1:5173/styleguide.html) or [paired studies](http://127.0.0.1:5173/explorations/) with the local server running. No verified deployment URL is available. Your repository is [itssfariha-lab/is117-brand-studio](https://github.com/itssfariha-lab/is117-brand-studio).
+
+**A short record, visible to you:** the AI-drafted LEARNING.md summary may be public with this repository. Review, correct or remove excerpts before commit/push. It records assistance and missing evidence; it is not a transcript or grade.
 
 ## Start here
 
@@ -56,7 +58,7 @@ You work at your own pace. There is no required class demonstration, quiz, separ
 
 | File                                   | Purpose                                                                                                    |
 | -------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| `public/index.html`                    | Working storefront; the first branding feature is still pending                                            |
+| `public/index.html`                    | VOID storefront; learner review and keep/merge pending                                                     |
 | `public/styleguide.html`               | Live identity board using the storefront's shared styles and assets                                        |
 | `public/studio.html`                   | Short studio overview, also [available online](https://kaw393939.github.io/is117-brand-studio/studio.html) |
 | [SPEC.md](SPEC.md)                     | The concise record of your chosen decisions and evidence                                                   |

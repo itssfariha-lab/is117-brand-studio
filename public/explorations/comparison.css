@@ -1,0 +1,33 @@
+.comparison main {
+  margin: 3rem 4vw;
+}
+
+.comparison .introduction {
+  max-width: 46rem;
+  margin-block: 2rem;
+}
+
+.comparison .comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  margin-block: 3rem;
+}
+
+.comparison iframe {
+  display: block;
+  width: 100%;
+  border: 1px solid #777;
+  margin-top: 1.5rem;
+  background: #141416;
+}
+
+.comparison .comparison-grid p {
+  min-height: 3rem;
+}
+
+@media (width <= 760px) {
+  .comparison .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+}

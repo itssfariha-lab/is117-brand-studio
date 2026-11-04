@@ -1,0 +1,496 @@
+/* Isolated exploration sheet. No storefront or style-guide styles are imported. */
+.void-preview {
+  --paper: #eeeae0;
+  --ink: #141416;
+  --accent: #c5b4f6;
+
+  margin: 0;
+  color: var(--paper);
+  background: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+.void-preview * {
+  box-sizing: border-box;
+}
+
+.void-preview a {
+  color: inherit;
+  text-underline-offset: 0.25em;
+}
+
+.void-preview a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.void-preview :focus-visible {
+  outline: 3px solid #9c78ff;
+  outline-offset: 5px;
+}
+
+.void-preview .skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  z-index: 10;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 1rem;
+}
+
+.void-preview .skip-link:focus {
+  top: 1rem;
+}
+
+.void-preview .preview-bar {
+  padding: 0.7rem 3vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem 2rem;
+  color: var(--ink);
+  background: var(--paper);
+  font: 0.75rem/1.5 monospace;
+}
+
+.void-preview .masthead {
+  margin-inline: 4vw;
+  min-height: 105px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+  border-bottom: 1px solid #777;
+}
+
+.void-preview .brand {
+  font-size: 2.8rem;
+  font-weight: 900;
+  letter-spacing: -0.08em;
+  text-decoration: none;
+}
+
+.void-preview .masthead-note {
+  font: 0.7rem monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.void-preview .masthead > a:last-child {
+  font-size: 0.8rem;
+}
+
+.void-preview .hero {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 6vw;
+  padding: 3rem 4vw 4rem;
+  max-width: 1600px;
+  margin: auto;
+  align-items: center;
+}
+
+.void-preview .artwork {
+  position: relative;
+  min-width: 0;
+  min-height: 590px;
+  display: grid;
+  place-items: center;
+  background: #242426;
+  overflow: hidden;
+}
+
+.void-preview .art-index {
+  position: absolute;
+  top: 1.2rem;
+  left: 1.2rem;
+  font: 0.7rem monospace;
+  z-index: 2;
+}
+
+.void-preview .art-caption {
+  position: absolute;
+  bottom: 1.2rem;
+  left: 1.2rem;
+  font: 0.7rem monospace;
+  z-index: 2;
+}
+
+.void-preview .shirt-image {
+  position: relative;
+  display: block;
+  width: 83%;
+  height: auto;
+  z-index: 1;
+}
+
+.void-preview .geometry {
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  background: var(--accent);
+  transform: rotate(45deg);
+}
+
+.void-preview .backtype,
+.void-preview .art-cross {
+  display: none;
+}
+
+.void-preview .eyebrow {
+  font: 0.7rem/1.6 monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 1.5rem;
+}
+
+.void-preview h1 {
+  font-size: clamp(3.5rem, 5.4vw, 6rem);
+  line-height: 0.98;
+  letter-spacing: -0.065em;
+  margin: 0;
+  font-weight: 800;
+}
+
+.void-preview h1 em {
+  font-style: normal;
+}
+
+.void-preview .support {
+  max-width: 32rem;
+  font-size: 1.05rem;
+  margin: 1.8rem 0;
+}
+
+.void-preview .product-note {
+  font: 0.72rem/1.6 monospace;
+  border-top: 1px solid #777;
+  padding-top: 1rem;
+}
+
+.void-preview fieldset {
+  border: 0;
+  margin: 1.2rem 0;
+  padding: 0;
+}
+
+.void-preview legend {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.void-preview .field-help {
+  font-size: 0.75rem;
+}
+
+.void-preview .size-options {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.void-preview .size-option {
+  position: relative;
+  cursor: pointer;
+}
+
+.void-preview .size-option input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.void-preview .size-option span {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 44px;
+  border: 1px solid #aaa;
+}
+
+.void-preview .size-option input:checked + span {
+  background: var(--accent);
+  color: var(--ink);
+  border-color: var(--accent);
+}
+
+.void-preview .size-option input:focus-visible + span {
+  outline: 3px solid #9c78ff;
+  outline-offset: 4px;
+}
+
+.void-preview button {
+  cursor: pointer;
+  font: inherit;
+}
+
+.void-preview .add-button {
+  border: 0;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 1rem 1.4rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.void-preview .add-button:hover {
+  background: var(--accent);
+}
+
+.void-preview .demo-disclaimer {
+  font-size: 0.72rem;
+  max-width: 32rem;
+  margin-top: 1rem;
+}
+
+.void-preview .field-error {
+  font-size: 0.85rem;
+  color: #ffc8c8;
+}
+
+.void-preview .bag-section,
+.void-preview .annotations {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6vw;
+  margin-inline: 4vw;
+  padding-block: 2.5rem;
+  border-top: 1px solid #777;
+}
+
+.void-preview h2 {
+  font-size: 1.8rem;
+  line-height: 1.1;
+  margin: 0 0 1rem;
+  letter-spacing: -0.04em;
+}
+
+.void-preview h3 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.void-preview .annotations p,
+.void-preview .bag-details {
+  font-size: 0.85rem;
+  max-width: 42rem;
+}
+
+.void-preview .annotations h3:first-child {
+  margin-top: 0;
+}
+
+.void-preview .text-button {
+  color: inherit;
+  background: transparent;
+  border: 1px solid #aaa;
+  padding: 0.6rem 1rem;
+}
+
+.void-preview button:disabled {
+  cursor: default;
+  opacity: 0.65;
+}
+
+.void-preview footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem 4vw;
+  border-top: 1px solid #777;
+  font: 0.75rem monospace;
+}
+
+.modernist .shirt-image {
+  width: auto;
+  height: 440px;
+  max-width: 85%;
+  object-fit: contain;
+}
+
+/* B: print collage, competing scales and typographic quotation. */
+.postmodernist .hero {
+  grid-template-columns: 1.05fr 1fr;
+  gap: 4vw;
+  padding-top: 4rem;
+}
+
+.postmodernist .artwork {
+  background: var(--accent);
+  color: var(--ink);
+  min-height: 590px;
+  transform: rotate(-2deg);
+  background-image: radial-gradient(#5c487a 0.7px, transparent 0.7px);
+  background-size: 5px 5px;
+  border: 1px solid var(--paper);
+}
+
+.postmodernist .backtype {
+  display: block;
+  position: absolute;
+  top: 1.3rem;
+  left: -0.02em;
+  font-size: clamp(7rem, 15vw, 17rem);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.1em;
+}
+
+.postmodernist .shirt-image {
+  width: 76%;
+  transform: rotate(7deg);
+  border: 10px solid var(--paper);
+  box-shadow: 16px 16px 0 #141416;
+  margin-top: 2rem;
+}
+
+.postmodernist .geometry {
+  width: 310px;
+  height: 310px;
+  border: 1px solid var(--ink);
+  background: none;
+  border-radius: 50%;
+  transform: none;
+  bottom: -90px;
+  right: -30px;
+}
+
+.postmodernist .art-cross {
+  display: block;
+  position: absolute;
+  bottom: 0.1rem;
+  right: 0.6rem;
+  font-size: 7rem;
+  line-height: 1;
+  z-index: 2;
+}
+
+.postmodernist .art-index {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0.4rem;
+  top: 47%;
+  left: 0.5rem;
+  writing-mode: vertical-rl;
+}
+
+.postmodernist .art-caption {
+  background: var(--paper);
+  padding: 0.4rem 0.7rem;
+  transform: rotate(2deg);
+}
+
+.postmodernist .hero-copy {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.postmodernist h1 {
+  font-size: clamp(3.5rem, 5.3vw, 6rem);
+}
+
+.postmodernist h1 em {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: -0.06em;
+  font-style: italic;
+  color: var(--accent);
+}
+
+.postmodernist .eyebrow {
+  letter-spacing: 0.02em;
+}
+
+.postmodernist .hero-copy > .eyebrow {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--ink);
+  transform: rotate(-2deg);
+  padding: 0.4rem 0.7rem;
+}
+
+.void-preview.postmodernist .add-button {
+  box-shadow: 6px 6px 0 var(--accent);
+}
+
+@media (width <= 760px) {
+  .void-preview .masthead {
+    min-height: 85px;
+    gap: 1rem;
+  }
+
+  .void-preview .masthead-note {
+    display: none;
+  }
+
+  .void-preview .hero {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-block: 1.5rem 3rem;
+  }
+
+  .void-preview .artwork {
+    min-height: 0;
+    height: 410px;
+  }
+
+  .void-preview .shirt-image {
+    width: auto;
+    height: 80%;
+    max-width: 90%;
+    object-fit: contain;
+  }
+
+  .void-preview .geometry {
+    width: 240px;
+    height: 240px;
+  }
+
+  .void-preview h1 {
+    font-size: clamp(3.4rem, 11vw, 5.5rem);
+  }
+
+  .void-preview .support {
+    font-size: 1rem;
+  }
+
+  .void-preview .bag-section,
+  .void-preview .annotations {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .postmodernist .hero {
+    padding-top: 2rem;
+  }
+
+  .postmodernist .artwork {
+    margin: 0.5rem;
+    height: 410px;
+  }
+
+  .postmodernist .shirt-image {
+    height: 74%;
+    margin-top: 1.5rem;
+    box-shadow: 8px 8px 0 #141416;
+  }
+
+  .postmodernist .backtype {
+    font-size: 8.5rem;
+  }
+
+  .postmodernist .art-cross {
+    font-size: 5rem;
+  }
+
+  .postmodernist .hero-copy {
+    padding: 0;
+  }
+}
