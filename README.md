@@ -2,7 +2,7 @@
 
 **VOID — wearable art.** A local postmodernist storefront built around the learner's chosen layered frame and contrasting typography. Size selection and the temporary demo bag work; there is no checkout.
 
-**Status:** implementation and live guide under review on `feature/BRAND-001`. The learner approved the brief and logo and supplied brief browser observations. Learning-record accuracy review is complete; GitHub issue #1 is open; [PR #2](https://github.com/itssfariha-lab/is117-brand-studio/pull/2) is open; final keep/merge remains pending. Nothing has been merged, published or submitted by the agent. See [SPEC.md](SPEC.md) for the acceptance audit and [LEARNING.md](LEARNING.md) for the short, learner-reviewed evidence summary.
+**Status:** **BRAND-001 kept and merged into `main`** through [PR #2](https://github.com/itssfariha-lab/is117-brand-studio/pull/2), verified at [e271f7c](https://github.com/itssfariha-lab/is117-brand-studio/commit/e271f7c9454a57314d8ed1888912fb1f2e9bfb87). Brief, logo and learning-summary accuracy reviewed by the learner. Local formatting/lint, 7 server tests and 21 browser tests passed; GitHub PR checks passed. No deployment or course submission has been verified. See [SPEC.md](SPEC.md) and [LEARNING.md](LEARNING.md).
 
 Open the [storefront](http://127.0.0.1:5173/), [live style guide](http://127.0.0.1:5173/styleguide.html) or [paired studies](http://127.0.0.1:5173/explorations/) with the local server running. No verified deployment URL is available. Your repository is [itssfariha-lab/is117-brand-studio](https://github.com/itssfariha-lab/is117-brand-studio).
 
@@ -58,7 +58,7 @@ You work at your own pace. There is no required class demonstration, quiz, separ
 
 | File                                   | Purpose                                                                                                    |
 | -------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| `public/index.html`                    | VOID storefront; learner review and keep/merge pending                                                     |
+| `public/index.html`                    | VOID storefront; BRAND-001 kept and merged                                                                 |
 | `public/styleguide.html`               | Live identity board using the storefront's shared styles and assets                                        |
 | `public/studio.html`                   | Short studio overview, also [available online](https://kaw393939.github.io/is117-brand-studio/studio.html) |
 | [SPEC.md](SPEC.md)                     | The concise record of your chosen decisions and evidence                                                   |
