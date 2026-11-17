@@ -17,7 +17,7 @@ VOID's promise is to turn an ordinary white T-shirt into a canvas for personal e
 1. **As a creative shopper, I want to see the shirt and styling inspiration so I can judge the brand.** Feature: existing hero and free styling tips. Check: narrow-screen layout is readable, without horizontal scrolling.
 2. **As a shopper, I want to select a size before adding a shirt so I don't choose accidentally.** Feature: existing size selector and demo bag. Check: missing size prevents adding; valid size adds correct item.
 3. **As a cautious visitor, I want to review my demo bag before confirming so I know what I selected.** Feature: simulated checkout review of shirt, size and quantity, labeled as a demo. Check: review matches bag and no payment information is requested.
-4. **As a visitor, I want my demo confirmation to be saved so I can retrieve it later.** Feature: Node API and real SQLite file storing demo orders and items. Check: create demo order, restart server, retrieve same order and items from SQLite.
+4. **As a visitor, I want my demo confirmation to be saved so I can retrieve it later.** Feature: Node API and real SQLite file storing demo orders and items. Check: submit an order and record its ID; inspect the SQLite file outside `public/` to verify the order and items; stop and restart the server; retrieve that same ID through the API and compare product, size and quantity. Invalid size/quantity must not create a database row. **These are planned checks, not executed results.**
 5. **As a keyboard/mobile visitor, I want to finish the demo flow without a mouse.** Feature: semantic controls, visible focus, responsive layout. Check: keyboard journey works and mobile review/confirmation is readable.
 
 ## Simulated checkout and required working SQLite backend
@@ -34,6 +34,9 @@ VOID's promise is to turn an ordinary white T-shirt into a canvas for personal e
 - **Reciprocity:** Free “Style it your way” outfit tips without signup or purchase.
 - **Unity:** “For people who dress to express” invites shared creativity without invented testimonials or membership claims.
 Neither is a measured conversion result.
+
+## AI-assisted review and documented revision
+[Issue #4](https://github.com/itssfariha-lab/is117-brand-studio/issues/4) identified an ambiguity in Story #4's persistence check. **Decision: implement in the plan.** The acceptance check now specifies inspecting the real SQLite file, restarting the server, comparing retrieved values, and rejecting invalid input without creating rows. **Documentation verification:** compared the revised Story #4 with the issue's requested checks. **Implementation verification remains pending** because the backend is not built. This is explicitly AI-assisted review, **not** classmate feedback.
 
 ## Classmate review and next decision
 **Peer question: pending actual classmate feedback.** Ask a classmate to explain one story and how they would verify it. Record their real question as a GitHub issue. Reply with a reasoned implement/investigate/defer/decline decision. For accepted changes, reference the issue in a commit, link the change, document the real verification, ask the reviewer to retry, and close only after confirmation. Leave unfinished work open.
